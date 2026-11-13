@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEI Drill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section id="home"></section>
+
+  <section id="quiz" hidden>
+    <div class="topbar">
+      <button class="iconbtn" id="quit" aria-label="End this session">✕</button>
+      <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+      <div class="streak cold" id="streak" aria-label="Streak">🔥 0</div>
+    </div>
+    <div id="qwrap"></div>
+  </section>
+
+  <section id="result" hidden></section>
+</main>
+
+<div id="sheet" class="sheet" hidden></div>
+<div id="explain" class="explain" hidden></div>
+
+<!-- KaTeX is bundled locally so the math works offline -->
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/auto-render.min.js"></script>
+<script src="figkit.js"></script>
+<script src="figs-1.js"></script>
+<script src="figs-2.js"></script>
+<script src="figs-3.js"></script>
+<script src="questions-1.js"></script>
+<script src="questions-2.js"></script>
+<script src="questions-3.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
